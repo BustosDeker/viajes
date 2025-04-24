@@ -1,0 +1,73 @@
+.navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+  
+  font-size: 1.1rem;
+  font-family: 'Arial';
+}
+
+
+@media (max-width: 575.98px) {
+  .navbar-nav .nav-link,
+  .dropdown-menu .dropdown-item {
+    font-size: 0.9rem; /* o 0.9rem si quieres aún más pequeño */
+  }
+} 
+
+/* Estilos base */
+.carousel-title {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .carousel-text .boton-tm {
+    font-size: 2rem;
+  }
+  
+  /* Estilos para pantallas pequeñas (menos de 576px) */
+  @media (max-width: 575.98px) {
+    .carousel-title {
+      font-size: 2rem; /* más pequeño para celular */
+    }
+    .carousel-text, .carousel-btn {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+@media (min-width: 768px) {
+    .carousel-item img {
+    height: 662px;
+  }
+}
+
+@media (max-width: 767.98px) {
+    .carousel-item img {
+    height: auto;
+    max-height: 300px;
+    }
+}
+
+.position-container {
+  position: relative;
+  min-height: 600px;
+}
+
+.yumbilla-card {
+  height: 500px;
+  position: static; /* default for mobile */
+  margin-top: 2rem;
+}
+
+@media (min-width: 992px) { /* lg and up */
+  .position-container {
+    position: relative;
+  }
+
+  .yumbilla-card {
+    position: absolute;
+    top: -875px;
+    right: 12px;
+  }
+}
+
+

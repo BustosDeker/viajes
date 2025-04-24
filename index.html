@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tours Sabu - Aventuras en Perú</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top " style="background-color: rgba(255, 255, 255, 0.9);">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Logo Tours Sabu" height="60" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2"><a class="nav-link active" href="index.html">Inicio</a></li>
+
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="toursDropdown" role="button" data-bs-toggle="dropdown">
+              Tours
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tour Diario</a></li>
+              <li><a class="dropdown-item" href="#">Costa Norte</a></li>
+              <li><a class="dropdown-item" href="#">Trekking</a></li>
+              <li><a class="dropdown-item" href="#">Selva</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item mx-2"><a class="nav-link" href="#">Paquetes</a></li>
+          <li class="nav-item mx-2" ><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#">Contacto</a></li>
+
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown">
+              <img src="https://flagcdn.com/w20/es.png" alt="Español" class="me-1" width="20">
+              ES
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="https://flagcdn.com/w20/es.png" alt="Español" class="me-2" width="20">
+                  Español
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="https://flagcdn.com/w20/us.png" alt="English" class="me-2" width="20">
+                  English
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="https://flagcdn.com/w20/br.png" alt="Português" class="me-2" width="20">
+                  Português
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-top: 80px;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="img/Foto1.jpeg" class="d-block w-100 mt-2" alt="Ciudad de Arequipa"  style="height: 662px; object-fit: cover;">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="carousel-title text-white fw-bold">Ciudad de Arequipa</h1>
+          <p class="carousel-text text-white fw-bold">Descubre sus volcanes, arquitectura colonial y la energía única del Misti</p>
+          <a href="#" class=" btn text-white border-white border-2 rounded-5 mt-3 btn-sm btn-md-lg px-3 px-md-5 py-2 py-md-3 " 
+              style="background-color: rgba(18, 243, 243, 0.9);"> RESERVAR AHORA ->
+          </a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/Foto2.jpeg" class="d-block w-100 mt-2" alt="Oasis de Huacachina" style="height: 662px; object-fit: cover;">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="carousel-title text-white fw-bold">Huacachina</h1>
+          <p class="carousel-text text-white fw-bold">Descubre sus volcanes, arquitectura colonial y la energía única del Misti</p>
+          <a href="#" class="btn text-white border-white border-2 rounded-5 mt-3 btn-sm btn-md-lg px-3 px-md-5 py-2 py-md-3" 
+              style="background-color: rgba(18, 243, 243, 0.9);"> RESERVAR AHORA ->
+          </a>
+        </div>
+        
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/Foto3.jpeg" class="d-block w-100 mt-2" alt="Machu Picchu" style="height: 662px; object-fit: cover;">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="carousel-title text-white fw-bold">Machu Picchu</h1>
+          <p class="carousel-text text-white fw-bold">Explora la joya del Imperio Inca entre nubes y montañas sagradas.</p>
+          <a href="#" class="btn text-white border-white border-2 rounded-5 mt-3 btn-sm btn-md-lg px-3 px-md-5 py-2 py-md-3  " 
+              style="background-color: rgba(18, 243, 243, 0.9);"> RESERVAR AHORA ->
+          </a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/Foto4.jpeg" class="d-block w-100 mt-2" alt="Chachapoyas" style="height: 662px; object-fit: cover;">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="carousel-title text-white fw-bold">Chachapoyas</h1>
+          <p class="carousel-text text-white fw-bold">Vive la magia ancestral de los Andes: fortalezas, cataratas y misterio en cada
+            rincón</p>
+          <a href="#" class="btn text-white border-white border-2 rounded-5 mt-3 btn-sm btn-md-lg px-3 px-md-5 py-2 py-md-3" 
+            style="background-color: rgba(18, 243, 243, 0.9);"> RESERVAR AHORA ->
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <section class="py-4" style="background-color: #d8d0d0;">
+    <div class="container">
+      <div class="text-center mb-3">
+        <h5>¿A dónde y cuándo deseas viajar?</h5>
+      </div>
+      <form class="row justify-content-center align-items-center g-2">
+        <div class="col-md-3">
+          <label class="form-label fw-bold">Destino</label>
+          <select class="form-select rounded-pill">
+            <option selected disabled>Selecciona un destino</option>
+            <option value="arequipa">Arequipa</option>
+            <option value="huacachina">Huacachina</option>
+            <option value="machu-picchu">Machu Picchu</option>
+            <option value="huacachina">Chachapoyas</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label class="form-label fw-bold">Fecha</label>
+          <input type="date" class="form-control rounded-pill">
+        </div>
+
+        <div class="col-md-3 mt-3">
+          <button type="submit" class="btn  bg-danger text-white rounded-pill mt-4 w-100">
+            ¡BUSCA TU VIAJE!
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Paquetes Turísticos en Arequipa</h2>
+        <p class="text-muted">Descubre la Ciudad Blanca y sus maravillas</p>
+      </div>
+      <div class="row row-cols-2 row-cols-md-4 g-4 mx-1">
+
+
+        <div class="col">
+          <div class="card h-100 d-flex flex-column shadow-sm border-0" style="background-color: #fff2e6;">
+            <div class="position-relative">
+              <img src="img/Arequipa y Cañon del Colca.jpeg" class="card-img-top"
+                style="height: 180px; object-fit: cover;" alt="Tour Arequipa 1">
+              <span class="badge bg-info text-white position-absolute top-0 end-0 m-2">¡NUEVO!</span>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="card-title">3D/2N Arequipa y Cañón del Colca</h6>
+                <p class="card-text mb-2"><strong>Por PAX</strong> S/ 550</p>
+              </div>
+              <a href="#" class="btn btn-info text-white rounded-pill w-100 mt-auto">RESERVAR AHORA</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card h-100 d-flex flex-column shadow-sm border-0" style="background-color: #fff2e6;">
+            <div class="position-relative">
+              <img src="img/Cyti Tour Arequipa.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;"
+                alt="Tour Arequipa 2">
+              <span class="badge bg-info text-white position-absolute top-0 end-0 m-2">¡NUEVO!</span>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="card-title">City Tour Arequipa Histórico</h6>
+                <p class="card-text mb-2"><strong>Por PAX</strong> S/ 80</p>
+              </div>
+              <a href="#" class="btn btn-info text-white rounded-pill w-100 mt-auto">RESERVAR AHORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 d-flex flex-column shadow-sm border-0" style="background-color: #fff2e6;">
+            <div class="position-relative">
+              <img src="img/Ruta del Silla y Cantera.jpeg" class="card-img-top"
+                style="height: 180px; object-fit: cover;" alt="Tour Arequipa 3">
+              <span class="badge bg-info text-white position-absolute top-0 end-0 m-2">¡NUEVO!</span>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="card-title">Ruta del Sillar y Canteras</h6>
+                <p class="card-text mb-2"><strong>Por PAX</strong> S/ 70</p>
+              </div>
+              <a href="#" class="btn btn-info text-white rounded-pill w-100 mt-auto">RESERVAR AHORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 d-flex flex-column shadow-sm border-0" style="background-color: #fff2e6;">
+            <div class="position-relative">
+              <img src="img/Mirador Arequipa.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;"
+                alt="Tour Arequipa 4">
+              <span class="badge bg-info text-white position-absolute top-0 end-0 m-2">¡NUEVO!</span>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="card-title">Miradores de Arequipa y Monasterio</h6>
+                <p class="card-text mb-2"><strong>Por PAX</strong> S/ 100</p>
+              </div>
+              <a href="#" class="btn btn-info text-white rounded-pill w-100 mt-auto">RESERVAR AHORA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Paquetes Turísticos de la Costa Sur del Perú</h2>
+        <p class="text-muted">Explora el desierto, la costa y la historia ancestral del Perú</p>
+      </div>
+      <div class="row row-cols-2 row-cols-md-4 g-4 mx-1">
+
+        <div class="col">
+          <div class="card h-100 d-flex flex-column shadow-sm border-0" style="background-color: #fff2e6;">
+            <div class="position-relative">
+              <img src="img/Tour Paracas.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;"
+                alt="Tour Paracas">
+              <span class="badge bg-info text-white position-absolute top-0 end-0 m-2">¡NUEVO!</span>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="card-title">Paracas + Reserva Nacional</h6>
+                <p class="card-text mb-2"><strong>Por PAX</strong> S/ 220</p>
+              </div>
+              <a href="#" class="btn btn-info text-white rounded-pill w-100 mt-auto">RESERVAR AHORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 d-flex flex-column shadow-sm border-0" style="background-color: #fff2e6;">
+            <div class="position-relative">
+              <img src="img/Ica y Huacachina.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;"
+                alt="Tour Huacachina">
+              <span class="badge bg-info text-white position-absolute top-0 end-0 m-2">¡NUEVO!</span>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="card-title">Ica y Huacachina Full Day</h6>
+                <p class="card-text mb-2"><strong>Por PAX</strong> S/ 180</p>
+              </div>
+              <a href="#" class="btn btn-info text-white rounded-pill w-100 mt-auto">RESERVAR AHORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 d-flex flex-column shadow-sm border-0" style="background-color: #fff2e6;">
+            <div class="position-relative">
+              <img src="img/Islas Ballestas.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;"
+                alt="Tour Islas Ballestas">
+              <span class="badge bg-info text-white position-absolute top-0 end-0 m-2">¡NUEVO!</span>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="card-title">Islas Ballestas + Paracas</h6>
+                <p class="card-text mb-2"><strong>Por PAX</strong> S/ 150</p>
+              </div>
+              <a href="#" class="btn btn-info text-white rounded-pill w-100 mt-auto">RESERVAR AHORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 d-flex flex-column shadow-sm border-0" style="background-color: #fff2e6;">
+            <div class="position-relative">
+              <img src="img/Sobrevuelo Lineas de Nazca.jpeg" class="card-img-top"
+                style="height: 180px; object-fit: cover;" alt="Tour Líneas de Nazca">
+              <span class="badge bg-info text-white position-absolute top-0 end-0 m-2">¡NUEVO!</span>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h6 class="card-title">Sobrevuelo Líneas de Nazca</h6>
+                <p class="card-text mb-2"><strong>Por PAX</strong> S/ 430</p>
+              </div>
+              <a href="#" class="btn btn-info text-white rounded-pill w-100 mt-auto">RESERVAR AHORA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="py-5">
+      <div class="container">
+        <h1 class="text-center mb-4 pb-2 border-bottom border-primary border-3">
+          Tour Diarios desde Chachapoyas
+        </h1>
+        <p class="text-center lead mb-5">Los mejores tours para viajar en el Norte de Perú</p>
+        <div class="row cols  g-4">
+
+          <div class="col-md-12 col-lg-6 g-4 ">
+            <div class="card h-100 shadow-sm d-flex flex-row">
+              <img src="img/Kuelap.jpeg" class="img-fluid rounded-start w-50 object-fit-cover" alt="Kuélap">
+              <div class="card-body d-flex flex-column justify-content-between w-50">
+                <div>
+                  <h5 class="card-title mb-1">Fortaleza de Kuélap</h5>
+                  <p class="card-subtitle text-muted small">Chachapoyas, Perú</p>
+                </div>
+                <p class="card-text text-success fw-bold">Por Pax S/ 120</p>
+                <button class="btn btn-primary fw-bold mt-2">RESERVAR AHORA</button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4 col-lg-6 g-4">
+            <div class="card h-100 shadow-sm d-flex flex-row">
+              <img src="IMG/CAÑON DEL SONCHE.jpeg" class="img-fluid rounded-start w-50 object-fit-cover"
+                alt="Cañón del Sonche">
+              <div class="card-body d-flex flex-column justify-content-between w-50">
+                <div>
+                  <h5 class="card-title mb-1">Cañón del Sonche</h5>
+                  <p class="card-subtitle text-muted small">Chachapoyas, Perú</p>
+                </div>
+                <p class="card-text text-success fw-bold">Por Pax S/ 75</p>
+                <button class="btn btn-primary fw-bold mt-2">RESERVAR AHORA</button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4 col-lg-6">
+            <div class="card h-100 shadow-sm d-flex flex-row">
+              <img src="img/La jalca Grande.jpeg" class="img-fluid rounded-start w-50 object-fit-cover" alt="La Jalca">
+              <div class="card-body d-flex flex-column justify-content-between w-50">
+                <div>
+                  <h5 class="card-title mb-1">La Jalca Grande</h5>
+                  <p class="card-subtitle text-muted small">Chachapoyas, Perú</p>
+                </div>
+                <p class="card-text text-success fw-bold">Por Pax S/ 85</p>
+                <button class="btn btn-primary fw-bold mt-2">RESERVAR AHORA</button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4 col-lg-6">
+            <div class="card h-100 shadow-sm d-flex flex-row">
+              <img src="img/Catarata Gocta.jpeg" class="img-fluid rounded-start w-50 object-fit-cover"
+                alt="Cañón del Sonche">
+              <div class="card-body d-flex flex-column justify-content-between w-50">
+                <div>
+                  <h5 class="card-title mb-1">Catarata Gocta Tours Diarios</h5>
+                  <p class="card-subtitle text-muted small">Chachapoyas, Perú</p>
+                </div>
+                <p class="card-text text-success fw-bold">Por Pax S/ 75</p>
+                <button class="btn btn-primary fw-bold mt-2">RESERVAR AHORA</button>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  </div>
+
+  <div class="py-5">
+    <div class="container">
+      <section>
+        <div class="card shadow-lg">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="img/Amazon expeditin.jpeg" class="img-fluid h-100"
+                style="min-height: 400px; object-fit: cover;" alt="Río Amazonas">
+            </div>
+            <div class="col-md-6 bg-light">
+              <div class="card-body p-5">
+                <h2 class="card-title display-6 text-success fw-bold mb-4">Amazon Expedition</h2>
+                <p class="card-text fs-5">
+                  Descubre la magia del Amazonas con nuestros tours exclusivos: navega por ríos cristalinos,
+                  explora senderos ocultos en la jungla virgen y conoce los secretos de la medicina ancestral
+                  de manos de guías locales.
+                </p>
+                <p class="card-text fs-5 mb-4">
+                  Desde la selva alta de <strong>Tarapoto</strong> hasta el laberinto acuático de
+                  <strong>Iquitos</strong>
+                  y la imponente <strong>Reserva Pacaya-Samiria</strong>
+                </p>
+                <div class="text-center">
+                  <button class="btn btn-success btn-lg fw-bold px-5 py-3">Tours al Amazonas</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  <footer class="bg-black text-white pt-5 pb-5 px-5">
+    <div class="container">
+      <div class="row">
+              <div class="col-md-4 mb-4">
+                <h3 class="text-uppercase fw-bold mb-4">Tours Sabu</h3>
+                <p>
+                  Somos una operadora de turismo especializada en viajes de aventura, cultura y naturaleza en el Norte
+                  de Perú.
+                  Nuestro objetivo es ofrecer experiencias auténticas y memorables.
+                </p>
+              </div>
+
+
+              <div class="col-md-2 mb-4">
+                <h5 class="text-uppercase fw-bold mb-4">Información</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none">Nosotros</a></li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none">Tours</a></li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none">Cotiza tu Viaje</a></li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog de Viajes</a></li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none">Libro de Reclamaciones</a></li>
+                  <li><a href="#" class="text-white text-decoration-none">Términos & Condiciones</a></li>
+                </ul>
+              </div>
+
+
+              <div class="col-md-3 mb-4">
+                <h5 class="text-uppercase fw-bold mb-4">Blog de Viajes</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none">Los Mejores Destinos del Norte de
+                      Perú</a></li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none">Excursiones a Laguna de los
+                      Cóndores</a></li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none">Tours en Chachapoyas</a></li>
+                  <li><a href="#" class="text-white text-decoration-none">Los Mejores Paquetes Turísticos</a></li>
+                </ul>
+              </div>
+
+
+              <div class="col-md-3 mb-4">
+                <h5 class="text-uppercase fw-bold mb-4">Contacto</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    Av. Juan Pablo II
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    (+51) 941 234 567 | (+51) 987 654 321
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-envelope me-2"></i>
+                    info@tourssabu.com
+                  </li>
+                  <li>
+                    <i class="fas fa-globe me-2"></i>
+                    www.tourssabu.com
+                  </li>
+                </ul>
+              </div>
+      </div>
+      <hr class="my-4 bg-secondary">
+
+      <div class="row">
+
+        <div class="col-md-6 text-center">
+          <p>&copy; 2025 Sagu viaje. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
